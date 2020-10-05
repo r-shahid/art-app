@@ -1,24 +1,24 @@
 import React from 'react'
-// import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 
 const Header = () => {
 
     return(
         <div className='navbar'>
             <div>
-                {/* <Link to="/"> */}
+                <Link to="/">
                     <span className='logo'>artAPP</span>
-                    {/* </Link> */}
+                    </Link>
                     </div>
             <div>
-                {/* <Link to="/random"> */}
+                <Link to="/random">
                     Random
-                    {/* </Link> */}
+                    </Link>
                     </div>
             <div>
-                {/* <Link to="/search"> */}
+                <Link to="/search">
                     Search
-                    {/* </Link> */}
+                    </Link>
                     </div>
         </div>
     )
