@@ -147,10 +147,16 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 ## Code Snippet
 
-Use this section to include a brief code snippet of functionality that you are proud of an a brief description.  Code snippet should not be greater than 10 lines of code. 
+There are almost 500,000 items included in this API. Each item has a unique object ID, but these ID numbers go up to the 800,000s. Also, only about 406,000 images are in the public domain. This meant that my handleSubmit function would return undefined every time an image was not in the public domain or if the object ID number was skipped. Before starting this project, I thought it would be really challenging to get my function to return an image every time, but all I needed was an if statement that calls the function again.
 
 ```
-function reverse(string) {
-	// here is the code to reverse a string of text
-}
+const handleSubmit = async () => {
+        let randomimg = Math.floor(Math.random() * 823616)
+        const gifSrc = `https://collectionapi.metmuseum.org/public/collection/v1/objects/${randomimg}`;
+        const response = await fetch(gifSrc);
+        const cheese = await response.json();
+        setGifSrc(cheese)
+        if (cheese.primaryImage === undefined || cheese.isPublicDomain === false){
+            handleSubmit()
+        }};
 ```
