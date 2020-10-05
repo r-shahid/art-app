@@ -153,7 +153,7 @@ const handleSubmit = async () => {
         const imgSrc = `https://collectionapi.metmuseum.org/public/collection/v1/objects/${randomimg}`;
         const response = await fetch(imgSrc);
         const cheese = await response.json();
-        setGifSrc(cheese)
+        setRandomImg(cheese)
         if (cheese.primaryImage === undefined || cheese.isPublicDomain === false){
             handleSubmit()
         }};
