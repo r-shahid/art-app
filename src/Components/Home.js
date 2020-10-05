@@ -1,7 +1,4 @@
 import React from 'react'
-import rebecca from './Images/abduction-of-rebecca.jpg'
-import renoir from './Images/stilllife-renoir.jpg'
-import vincent from './Images/selfportrait-vangogh.jpg'
 
 
 const Home = () => {

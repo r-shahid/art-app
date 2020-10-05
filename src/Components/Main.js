@@ -1,30 +1,33 @@
 import React from 'react'
 import { Route, Switch } from 'react-router-dom'
 import Home from './Home'
+import Random from './Random'
+
 
 const Main = () => {
 
-    return(
+    return (
         <main>
-        <h3>this is main</h3>
-        <Switch>
+            {/* <h3>this is main</h3> */}
+            <Switch>
                 <Route exact path="/">
                     <Home />
                 </Route>
                 {/* <Route
                     path='/stocks/:name'
                     render={props => <Stocks stockData={stockData} {...props} />}
-                />
+                /> */}
                 <Route
-                    path="/stocks/"
-                    render={props => <><TableHeader /> <Dashboard  {...props} stockData={stockData} /></>}
-                />
+                    path="/random">
+                    <Random />
+                </Route>
 
-                <Route path="/about">
+
+                {/* <Route path="/about">
                     <About />
-                </Route> */}
+                </Route>  */}
             </Switch>
-            </main>
+        </main>
     )
 }
 

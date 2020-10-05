@@ -1,16 +1,16 @@
 import React from 'react';
 import './styles.css';
 import Header from './Header'
-// import Main from './Main';
+import Main from './Main';
 import Footer from './Footer';
-import Home from './Home';
+// import Home from './Home';
 
 function App() {
   return (
     <div className="App">
       <Header />
-      {/* <Main /> */}
-      <Home />
+      <Main />
+      {/* <Home /> */}
       <Footer />
     </div>
   );
