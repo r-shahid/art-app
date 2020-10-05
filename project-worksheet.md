@@ -135,7 +135,7 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| App, Header, Footer, Home | H | 2 | |  |
+| App, Header, Footer, Home | H | 2 | 2 |  |
 |Search| H|1.5hrs|||
 |Random| H|1.5hrs|||
 | Working with API | H | 4hrs|  | |

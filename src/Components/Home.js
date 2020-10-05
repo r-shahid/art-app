@@ -19,7 +19,6 @@ const Home = () => {
                         <div><p className='overlaid-text'>Show me a random piece of art</p></div>
                     </div>
                     <div className='search-img'>
-                        {/* <img className='vincent' src={vincent} alt='self portrait with a straw har - vincent van gogh' /> */}
                         <div><p className='overlaid-text'>I know what I'm looking for...</p></div>
                     </div>
                 </div>
