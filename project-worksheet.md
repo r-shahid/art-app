@@ -81,8 +81,6 @@ Example: https://collectionapi.metmuseum.org/public/collection/v1/objects/24
 
 ## Wireframes
 
-Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Also, define the the React components and the architectural design of your app.
-
 * [Mobile - Home](https://res.cloudinary.com/rshahid/image/upload/v1601659208/Mobile/Mobile-Home_yrbcfz.png)
 * [Mobile - Random](https://res.cloudinary.com/rshahid/image/upload/v1601659202/Mobile/Mobile-Random_ihacvq.png)
 * [Mobile - Search](https://res.cloudinary.com/rshahid/image/upload/v1601658846/Mobile/Mobile-Search_Results_v2htcc.png)
@@ -133,12 +131,12 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 
 
-| Component | Priority | Estimated Time | Time Invetsted | Actual Time |
+| Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | App, Header, Footer, Home | H | 2 | 3 | 3 |
 |Search| H|1.5hrs|||
 |Random| H|1.5hrs|||
-| Working with API | H | 4hrs|  | |
+| Working with API | H | 4hrs| 2 | |
 |Styling|M|3hrs|||
 | Total | |12 | | |
 
@@ -152,8 +150,8 @@ There are almost 500,000 items included in this API. Each item has a unique obje
 ```
 const handleSubmit = async () => {
         let randomimg = Math.floor(Math.random() * 823616)
-        const gifSrc = `https://collectionapi.metmuseum.org/public/collection/v1/objects/${randomimg}`;
-        const response = await fetch(gifSrc);
+        const imgSrc = `https://collectionapi.metmuseum.org/public/collection/v1/objects/${randomimg}`;
+        const response = await fetch(imgSrc);
         const cheese = await response.json();
         setGifSrc(cheese)
         if (cheese.primaryImage === undefined || cheese.isPublicDomain === false){
