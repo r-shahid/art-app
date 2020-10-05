@@ -103,18 +103,18 @@ Example: https://collectionapi.metmuseum.org/public/collection/v1/objects/24
 * [react architecture](https://docs.google.com/drawings/d/1a8k2bTIiIumL3zatI5njL61af6T3PbKivv2kbtVV6E4/edit?usp=sharing)
 
 
-### MVP/PostMVP - 5min
+### MVP/PostMVP
 
-The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
-
-#### MVP EXAMPLE
+#### MVP
 - Find and use external api 
 - Render data on page 
 - Allow user to interact with the page
 
-#### PostMVP EXAMPLE
+#### PostMVP
 
 - Find another api for more information on artworks rendered or for art-related events (??if that exists)
+- Add information about the images used on the Home page to the Search page
+- Try to style the images on the home page with z-index instead of setting them as background image for each div
 
 ## Components
 
@@ -145,7 +145,7 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 ## Code Snippet
 
-There are almost 500,000 items included in this API. Each item has a unique object ID, but these ID numbers go up to the 800,000s. Also, only about 406,000 images are in the public domain. This meant that my handleSubmit function would return undefined every time an image was not in the public domain or if the object ID number was skipped. Before starting this project, I thought it would be really challenging to get my function to return an image every time, but all I needed was an if statement that calls the function again.
+There are almost 500,000 items included in this API. Each item has a unique object ID, but these ID numbers go up to the 800,000s (even though the count starts at 1). Also, only about 406,000 images are in the public domain. This meant that my handleSubmit function would return undefined every time an image was not in the public domain or if the object ID number was skipped. Before starting this project, I thought it would be really challenging to get my function to return an image every time, but all I needed was an if statement that calls the function again.
 
 ```
 const handleSubmit = async () => {

@@ -6,3 +6,8 @@ button {
     font-size: 20px;
     font-weight: bold;
 }
+
+img {
+    /* width: 100%; */
+    max-height: 500px;
+}
