@@ -3,7 +3,9 @@ import { Route, Switch } from 'react-router-dom'
 import Home from './Home'
 import Random from './Random/Random'
 import Search from './Search/Search'
-
+import Result from './Result'
+import fJSX from './Search/Search'
+ 
 
 const Main = () => {
 
@@ -14,17 +16,17 @@ const Main = () => {
                 <Route exact path="/">
                     <Home />
                 </Route>
-                {/* <Route
-                    path='/stocks/:name'
-                    render={props => <Stocks stockData={stockData} {...props} />}
-                /> */}
+                <Route
+                    path='/search/:objectID'
+                    render={props => <Result fJSX={fJSX} {...props} />}
+                />
                 <Route
                     path="/random">
                     <Random />
                 </Route>
                 <Route path="/search">
                     <Search />
-                </Route> 
+                </Route>
             </Switch>
         </main>
     )

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import {Link} from 'react-router-dom'
 import './search.css'
 
 const Search = () => {
@@ -26,7 +27,7 @@ const Search = () => {
         }
 
         const searchResults = cheese.objectIDs.slice(0, 10)
-        console.log(searchResults)
+        // console.log(searchResults)
         setResults(searchResults)
 
         console.log(search)
@@ -35,28 +36,10 @@ const Search = () => {
         //////   TAKING THE OBJECT IDS FROM SEARCHRESULTS AND RENDERING THE IMAGES
         /////////////////////////////////////////////////////////////////////////////////
 
-        // const objectID = searchResults.forEach(function(item) {
-        //     // console.log(item)
-        // })
-
-
-
-        // console.log(objectID)
-
-        // const searchSrc =
-        //     `https://collectionapi.metmuseum.org/public/collection/v1/objects/${objectID}`;
-
-
-        // const response = await fetch(searchSrc);
-        // const cheese = await response.json();
-        // console.log(cheese, 'objectID');
-        // setRandomImg(cheese)
-        // console.log(cheese.primaryImage)
-
 
         setSearch('');
     }
-
+//////  ALEX HELPED ME WITH THIS PART
     useEffect(() => {
         const finalJSX = results.map(async (obj) => {
             const searchSrc =
@@ -64,8 +47,8 @@ const Search = () => {
             const response = await fetch(searchSrc);
             const cheese = await response.json();
 
-            return await (
-                <img src={cheese.primaryImage} alt='' />
+            return (
+                <Link to={`/search/${cheese.objectID}`}><img src={cheese.primaryImage} alt={cheese.title} /></Link>
             )
         })
         Promise.all(finalJSX).then((data) => {
@@ -74,7 +57,7 @@ const Search = () => {
     }, [results])
 
 
-    console.log(results)
+    // console.log(results)
 
     const handleChange = e => {
         const searchTerm = e.target.value;
@@ -82,11 +65,8 @@ const Search = () => {
         // console.log(searchTerm)
     }
 
-
-
     return (
         <>
-            {/* <h1>this is the search page</h1> */}
             <form onSubmit={handleSubmit}>
                 <input type="text" onChange={handleChange} ></input>
                 <input className='button' type='submit' value='search'></input>
@@ -94,6 +74,7 @@ const Search = () => {
 
             <div className='search-results'>
                 {fJSX}
+                
             </div>
         </>
     )
