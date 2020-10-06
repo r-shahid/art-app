@@ -1,0 +1,18 @@
+h1 {
+    color: blue
+}
+
+/* not sure why random.css is being applied to search.js. I have to put different button settings here to override those declared in random.css */
+.button{
+    background-color: var(--red);
+    color:white;
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 30px 0;
+}
+
+input {
+    padding: 5px 100px 5px 5px;
+    margin: 30px 0;
+}
