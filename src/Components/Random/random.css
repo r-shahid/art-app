@@ -11,3 +11,17 @@ img {
     /* width: 100%; */
     max-height: 500px;
 }
+
+.details {
+    text-align: left;
+    padding: 20px;
+}
+
+.more-info {
+    background-color: var(--red);
+    padding: 5px 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}

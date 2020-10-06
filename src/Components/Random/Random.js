@@ -42,7 +42,7 @@ const Random = () => {
             <div><button onClick={handleSubmit}>Random</button></div>
             <div>
                 <img src={randomImg.primaryImage} alt="" />
-                <div>
+                <div className='details'>
                     <h1>{randomImg.title}</h1>
                     <h3>{randomImg.artistDisplayName}</h3>
                     <h4>{randomImg.artistDisplayBio}</h4>
@@ -55,7 +55,7 @@ const Random = () => {
                         <br />
                         Credit: {randomImg.creditLine}
                     </p>
-                    <a href={randomImg.objectURL}>More Info</a>
+                    <a className='more-info' href={randomImg.objectURL}>More Info</a>
                 </div>
             </div>
         </>
