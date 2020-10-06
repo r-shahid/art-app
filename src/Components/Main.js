@@ -2,6 +2,7 @@ import React from 'react'
 import { Route, Switch } from 'react-router-dom'
 import Home from './Home'
 import Random from './Random/Random'
+import Search from './Search/Search'
 
 
 const Main = () => {
@@ -21,11 +22,9 @@ const Main = () => {
                     path="/random">
                     <Random />
                 </Route>
-
-
-                {/* <Route path="/about">
-                    <About />
-                </Route>  */}
+                <Route path="/search">
+                    <Search />
+                </Route> 
             </Switch>
         </main>
     )

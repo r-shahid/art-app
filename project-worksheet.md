@@ -135,7 +135,7 @@ Example: https://collectionapi.metmuseum.org/public/collection/v1/objects/24
 | --- | :---: |  :---: | :---: | :---: |
 | App, Header, Footer, Home | H | 2 | 3 | 3 |
 |Search| H|1.5hrs|||
-|Random| H|1.5hrs|||
+|Random| H|1.5hrs|1.5|1.5|
 | Working with API | H | 4hrs| 2 | |
 |Styling|M|3hrs|||
 | Total | |12 | | |
