@@ -4,7 +4,6 @@ import Home from './Home'
 import Random from './Random/Random'
 import Search from './Search/Search'
 import Result from './Result'
-import fJSX from './Search/Search'
  
 
 const Main = () => {
@@ -18,7 +17,7 @@ const Main = () => {
                 </Route>
                 <Route
                     path='/search/:objectID'
-                    render={props => <Result fJSX={fJSX} {...props} />}
+                    render={props => <Result {...props} />}
                 />
                 <Route
                     path="/random">
