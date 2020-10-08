@@ -1,3 +1,17 @@
 .more {
     display: none;
 }
+
+.result-details h1, .more h2 {
+    font-family: metFontSemi;
+    font-size: 30px;
+}
+
+.result-details h3,h4 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.result-details p {
+    font-family: metFont;
+    font-size: 18px;
+}
