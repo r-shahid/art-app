@@ -133,12 +133,12 @@ Example: https://collectionapi.metmuseum.org/public/collection/v1/objects/24
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| App, Header, Footer, Home | H | 2 | 3 | 3 |
-|Search| H|1.5hrs|4|4|
-|Random| H|1.5hrs|2|2|
-| Working with API | H | 4hrs| 2 | 2 |
-|Styling|M|3hrs|||
-| Total | |12 | | |
+| App, Header, Footer, Home | H | 2hrs | 3hrs | 3hrs |
+|Search| H|1.5hrs|4hrs|4hrs|
+|Random| H|1.5hrs|2hrs|2hrs|
+| Working with API | H | 4hrs| 2hrs | 2hrs |
+|Styling|M|3hrs|4hrs|4hrs|
+| Total | |12hrs | | |
 
 ## Additional Libraries
  Use this section to list all supporting libraries and thier role in the project such as Axios, ReactStrap, D3, etc. 
