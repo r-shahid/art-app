@@ -1,0 +1,27 @@
+@media screen and (min-width: 1024px) {
+    .hero-img {
+        height: 800px;
+    }
+    
+    .hero-img div {
+        margin: 0 0 20% 0;
+    }
+
+    .hero-img .overlaid-text {
+        font-size: 26px;
+        padding: 20px 40px;
+        margin: 0 200px;
+}
+
+    .headline {
+        font-size: 100px;
+    }
+
+    .main-bottom {
+        height: 600px;
+    }
+
+    .overlaid-text {
+        font-size: 24px;
+    }
+}

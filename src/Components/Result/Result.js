@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react'
+import './result.css'
 import './result-tab.css'
+import './result-desk.css'
 // import fJSX from './Search/Search'
 
 const Result = (props) => {
@@ -10,6 +12,7 @@ const Result = (props) => {
     const [extraOne, setExtraOne] = useState([])
     const [extraTwo, setExtraTwo] = useState([])
     const [extraThree, setExtraThree] = useState([])
+    const [extraFour, setExtraFour] = useState([])
 
     useEffect(async () => {
         const resultsSrc =
@@ -65,16 +68,34 @@ const Result = (props) => {
             const cheese = await response.json();
 
             setExtraThree(cheese)
+            onLoad4();
         if (cheese.primaryImage === undefined || cheese.isPublicDomain === false) {
             onLoad3()
         }
        
     }
+    const onLoad4 = async () => {
+
+
+        let extra4 = Math.floor(Math.random() * 823616)
+
+        const extra4Src =
+            `https://collectionapi.metmuseum.org/public/collection/v1/objects/${extra4}`;
+
+        const response = await fetch(extra4Src);
+        const cheese = await response.json();
+
+        setExtraFour(cheese)
+        if (cheese.primaryImage === undefined || cheese.isPublicDomain === false) {
+            onLoad4()
+        }
+
+    }
 
 
     return (
         <>
-            <div className='result-info' onLoad={onLoad1}>
+            <div onLoad={onLoad1} className='result-info' >
                 <div className='result-img'><img src={result.primaryImage} alt={result.title} /></div>
                 <div className='result-details'>
                     <h1>{result.title}</h1>
@@ -93,12 +114,13 @@ const Result = (props) => {
                 </div>
 
             </div>
-            <div className='more'>
+            <div className='more' >
                 <h2>See More</h2>
                 <div className='more-results'>
                 <div className='extra-img'><a href={extraOne.objectURL}><img src={extraOne.primaryImage} alt={extraOne.title} /></a></div>
                     <div className='extra-img'><a href={extraTwo.objectURL}><img src={extraTwo.primaryImage} alt={extraTwo.title} /></a></div>
                     <div className='extra-img'><a href={extraThree.objectURL}><img src={extraThree.primaryImage} alt={extraThree.title} /></a></div>
+                    <div className='extra-img four'><a href={extraFour.objectURL}><img src={extraFour.primaryImage} alt={extraFour.title} /></a></div>
             </div>
             </div>
             

@@ -18,6 +18,15 @@
         padding: 0 20px;
     }
 
+    .more {
+        display: block;
+    }
+
+    .four {
+        display: none;
+    }
+
+
     .extra-img img {
         max-height: 400px;
         max-width: 100%;

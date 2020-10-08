@@ -110,10 +110,10 @@ padding: 0 20px;
 .hero-img .overlaid-text {
   font-family: metFontBold;
   font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  color: white;
+  font-size: 18px;
+  color: rgb(255, 255, 255, .6);
   background-color: none;
-  border: 3px solid white;
+  border: 3px solid rgb(255, 255, 255, .6);
   border-radius: 3px;
   padding: 5px 10px;
   margin: 0 40px;
@@ -145,7 +145,6 @@ padding: 0 20px;
 
 .home-page-links a{
   text-decoration: none;
-  color: inherit
 }
 
 .footer {

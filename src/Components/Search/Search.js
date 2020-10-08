@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import {Link} from 'react-router-dom'
 import './search.css'
 import './search-tab.css'
+import './search-desk.css'
 
 const Search = () => {
 

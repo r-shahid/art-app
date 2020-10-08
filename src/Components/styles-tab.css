@@ -25,6 +25,21 @@
   height: 500px;
 }
 
+.headline {
+  font-size: 60px;
+}
+
+.hero-img .overlaid-text {
+  font-size: 22px;
+  padding: 5px 10px;
+  margin: 0 100px;
+}
+
+.random-img .overlaid-text,
+.search-img .overlaid-text {
+  font-size: 20px;
+}
+
 .random-img, .search-img {
   align-items: center;
 }
