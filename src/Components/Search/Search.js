@@ -26,7 +26,7 @@ const Search = () => {
             console.log('no results found')
         }
 
-        const searchResults = cheese.objectIDs.slice(0, 10)
+        const searchResults = cheese.objectIDs.slice(0, 30)
         // console.log(searchResults)
         setResults(searchResults)
 

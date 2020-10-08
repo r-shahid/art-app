@@ -1,5 +1,28 @@
 :root{
-  --red: #E4002B
+  --red: #E4002B;
+  --other-red:#AB1F0E;
+  --barley: #9B7C52;
+  --khaki: #C3AF99;
+  --light-khaki: #e0d7cd;
+  --brown: #62392C;
+  --blackish: #373B33;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@font-face {
+  font-family: metFont;
+  src: url(Fonts/The Met Serif Web-Roman.ttf)
+}
+
+@font-face {
+  font-family: metFontSemi;
+  src: url(Fonts/The\ Met\ Serif\ Web-Semibold.ttf)
+}
+
+@font-face {
+  font-family: metFontBold;
+  src: url(Fonts/The\ Met\ Serif\ Web-Bold.ttf);
 }
 
 .App {
@@ -8,6 +31,7 @@
 
 .navbar{
 background-color: var(--red);
+/* background-coloxr: var(--other-red); */
 display: flex;
 align-items: center;
 height: 60px;
@@ -25,10 +49,10 @@ padding: 0 20px;
 .navbar .logo {
   font-size: 25px;
 }
-
-.home-page {
-  background-color: pink;
-}
+/* 
+body {
+  background-color: var(--light-khaki);
+} */
 
 .main-bottom {
   display: grid;
@@ -45,6 +69,10 @@ padding: 0 20px;
   display: flex;
   align-items: flex-end;
   justify-content: center;
+}
+
+.hero-img div {
+  margin: 0 0 35% 0;
 }
 
 .random-img {
@@ -67,11 +95,67 @@ padding: 0 20px;
   justify-content: center;
 }
 
-.overlaid-text {
-  background-color: white;
+.headline {
+  color: white;
+  font-family: metFontBold;
+  font-size: 50px;
+  margin: 20px auto;
+}
+
+.hero-img .overlaid-text {
+  font-family: metFontBold;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: white;
+  background-color: none;
+  border: 3px solid white;
+  border-radius: 3px;
+  padding: 5px 10px;
+  margin: 0 40px;
+}
+
+.random-img .overlaid-text,
+.search-img .overlaid-text {
+  font-family: 'Roboto', sans-serif;
+  /* letter-spacing: .7px; */
+  /* font-weight: ; */
+  /* background-color: var(--khaki);
+  color: var(--blackish);
+  border: 2px solid var(--blackish); */
+  background-color: rgb(0, 0, 0, .2);
+  color: white;
+  border: 2px solid white;
+  border-radius: 3px;
+  margin: 30px;
+  padding: 15px;
+}
+
+/* .search-img .overlaid-text {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--khaki);
+  color: var(--blackish);
+  border: 2px solid var(--barley);
+  border-radius: 3px;
   margin: 30px;
   padding: 20px;
-  z-index: 1;
+} */
+
+.random-img .overlaid-text:hover{
+  color: white;
+  background-color: var(--red);
+  border: 2px solid white;
+  border-radius: 3px;
+}
+.search-img .overlaid-text:hover{
+  color: white;
+  background-color: var(--red);
+  border: 2px solid white;
+  border-radius: 3px;
+}
+
+.home-page-links a{
+  text-decoration: none;
+  color: inherit
 }
 
 .footer {
@@ -81,5 +165,7 @@ padding: 0 20px;
 .footer p {
   color: white;
   padding: 20px;
-  font-size: 12px;
+  font-family: metFont;
+  font-size: 14px;
+  letter-spacing: 1px;
 }
