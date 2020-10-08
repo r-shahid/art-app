@@ -1,6 +1,6 @@
 :root{
-  --red: #E4002B;
-  --other-red:#AB1F0E;
+  /* --red: #E4002B; */
+  --red:#AB1F0E;
   --barley: #9B7C52;
   --khaki: #C3AF99;
   --light-khaki: #e0d7cd;
@@ -40,15 +40,22 @@ padding: 0 20px;
 
 .navbar a {
   color: white;
+  font-family: 'roboto', sans-serif;
   font-weight: bold;
   font-size: 15px;
   text-decoration: none;
   margin: 10px;
 }
 
-.navbar .logo {
-  font-size: 25px;
+.header-logo {
+  /* width: 30%; */
+  height: 60px;
+  /* background-image: url('./Images/art-app-logo.png'); */
 }
+
+/* .navbar .logo {
+  font-size: 25px;
+} */
 /* 
 body {
   background-color: var(--light-khaki);

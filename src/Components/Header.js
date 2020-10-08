@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import Logo from './Images/art-logo.png'
 
 const Header = () => {
 
@@ -7,7 +8,7 @@ const Header = () => {
         <div className='navbar'>
             <div>
                 <Link to="/">
-                    <span className='logo'>artAPP</span>
+                    <img className='header-logo' src={Logo} alt="logo" />
                     </Link>
                     </div>
             <div>
