@@ -1,0 +1,33 @@
+@media screen and (min-width: 768px) {
+    .result-info {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin: 20px 0;
+    }
+
+    .result-img {
+        margin: auto;
+    }
+
+    .result-details {
+        text-align: left;
+        padding-right: 20px;
+    }
+
+    .extra-img {
+        padding: 0 20px;
+    }
+
+    .extra-img img {
+        max-height: 400px;
+        max-width: 100%;
+    }
+
+    .more-results {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        grid-gap: 10px;
+        grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) )
+    }
+}

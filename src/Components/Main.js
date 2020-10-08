@@ -3,7 +3,7 @@ import { Route, Switch } from 'react-router-dom'
 import Home from './Home'
 import Random from './Random/Random'
 import Search from './Search/Search'
-import Result from './Result'
+import Result from './Result/Result'
  
 
 const Main = () => {

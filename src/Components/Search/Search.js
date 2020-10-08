@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import {Link} from 'react-router-dom'
 import './search.css'
+import './search-tab.css'
 
 const Search = () => {
 
@@ -11,8 +12,6 @@ const Search = () => {
     const handleSubmit = async (e) => {
 
         e.preventDefault();
-        // handleSubmit(search);
-
 
         const imgSrc =
             `https://collectionapi.metmuseum.org/public/collection/v1/search?q=${search}`;
@@ -20,14 +19,12 @@ const Search = () => {
         const response = await fetch(imgSrc);
         const cheese = await response.json();
         console.log(cheese, 'search term');
-        // setSearch(cheese)
 
         if (cheese.objectIDs === null) {
             console.log('no results found')
         }
 
         const searchResults = cheese.objectIDs.slice(0, 30)
-        // console.log(searchResults)
         setResults(searchResults)
 
         console.log(search)
@@ -35,9 +32,7 @@ const Search = () => {
         /////////////////////////////////////////////////////////////////////////////////
         //////   TAKING THE OBJECT IDS FROM SEARCHRESULTS AND RENDERING THE IMAGES
         /////////////////////////////////////////////////////////////////////////////////
-
-
-        setSearch('');
+        
     }
 //////  ALEX HELPED ME WITH THIS PART
     useEffect(() => {
@@ -56,13 +51,9 @@ const Search = () => {
         })
     }, [results])
 
-
-    // console.log(results)
-
     const handleChange = e => {
         const searchTerm = e.target.value;
         setSearch(searchTerm);
-        // console.log(searchTerm)
     }
 
     return (

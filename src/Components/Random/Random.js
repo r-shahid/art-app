@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './random.css'
+import './random-tab.css'
 
 const Random = () => {
 
@@ -29,10 +30,10 @@ const Random = () => {
         }
 
         //this part isn't working. the console log comes out fine, but the dimension value still shows as blank
-        if (cheese.dimensions === ""){
-            console.log('no img dimensions')
-            randomImg.dimensions = "none"
-        }
+        // if (cheese.dimensions === ""){
+        //     console.log('no img dimensions')
+        //     randomImg.dimensions = "none"
+        // }
 
     };
 
@@ -40,7 +41,7 @@ const Random = () => {
         <>
             {/* <h1>this is the random page</h1> */}
             <div><button onClick={handleSubmit}>Random</button></div>
-            <div>
+            <div className='random-result'>
                 <img src={randomImg.primaryImage} alt="" />
                 <div className='details'>
                     <h1>{randomImg.title}</h1>

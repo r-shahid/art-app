@@ -1,0 +1,13 @@
+@media screen and (min-width: 768px) {
+    .random-result {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    img {
+    margin: auto;
+    max-height: 800px;
+    max-width: 350px;
+}
+
+}

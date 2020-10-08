@@ -1,0 +1,33 @@
+@media screen and (min-width: 768px) {
+    .navbar a {
+        font-size: 20px;
+    }
+
+    .search-word {
+        display: none;
+    }
+
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .search-icon {
+        display: flex;
+        align-self: center;
+        color: white;
+        padding: 0 20px;
+    }
+
+    .hero-img {
+        height: 900px;
+}
+    .main-bottom {
+  height: 500px;
+}
+
+.random-img, .search-img {
+  align-items: center;
+}
+
+    
+}
