@@ -6,7 +6,7 @@
 ## Project Links
 
 - [github repo link](https://github.com/r-shahid/art-generator)
-- [add your deployment link]()
+- [deployment link](https://art-unlimited.netlify.app)
 
 ## Project Description
 
@@ -138,7 +138,7 @@ Example: https://collectionapi.metmuseum.org/public/collection/v1/objects/24
 |Random| H|1.5hrs|2hrs|2hrs|
 | Working with API | H | 4hrs| 2hrs | 2hrs |
 |Styling|M|3hrs|4hrs|4hrs|
-| Total | |12hrs | | |
+| Total | |12hrs | 15hrs|15hrs |
 
 ## Additional Libraries
  Use this section to list all supporting libraries and thier role in the project such as Axios, ReactStrap, D3, etc. 
@@ -154,6 +154,7 @@ const handleSubmit = async () => {
         const response = await fetch(imgSrc);
         const cheese = await response.json();
         setRandomImg(cheese)
+        
         if (cheese.primaryImage === undefined || cheese.isPublicDomain === false){
             handleSubmit()
         }};
