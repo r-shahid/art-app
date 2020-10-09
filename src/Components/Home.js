@@ -11,7 +11,6 @@ const Home = () => {
                     <div>
                         <h1 className='headline'>Welcome!</h1>
                         <p className='overlaid-text'>Explore public domain art from the Metropolitan Museum of Art's Collection</p></div>
-                    {/* <img src={rebecca} alt='rebecca' /> */}
 
                 </div>
                 <div className="main-bottom">

@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 import './result.css'
 import './result-tab.css'
 import './result-desk.css'
-// import fJSX from './Search/Search'
 
 const Result = (props) => {
     console.log(props, 'this is props')

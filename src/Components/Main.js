@@ -10,7 +10,6 @@ const Main = () => {
 
     return (
         <main>
-            {/* <h3>this is main</h3> */}
             <Switch>
                 <Route exact path="/">
                     <Home />

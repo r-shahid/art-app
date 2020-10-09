@@ -17,7 +17,6 @@ const Random = () => {
         // const imgSrc =
         //     `https://collectionapi.metmuseum.org/public/collection/v1/objects/108209`;
 
-        // console.log(randomimg)
 
         const response = await fetch(imgSrc);
         const cheese = await response.json();
@@ -39,7 +38,6 @@ const Random = () => {
 
     return (
         <>
-            {/* <h1>this is the random page</h1> */}
             <div><button onClick={handleSubmit}>Random</button></div>
             <div className='random-result'>
                 <img src={randomImg.primaryImage} alt="" />
